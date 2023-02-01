@@ -20,7 +20,7 @@ pre{
 
 /*Images*/
 .image1 {
-  max-width: 28%;
+  max-width: 48%;
   margin: 5px top left;
 }
 
@@ -36,7 +36,7 @@ pre{
 }
 
 .column img {
-  max-width: 25%;
+  max-width: 50%;
   margin-top: 8px;
   vertical-align: middle;
 }
@@ -60,7 +60,7 @@ img {
 }
 
 .logo {
-  max-width: 50%;
+  max-width: 60%;
   margin-top: 8px;
   vertical-align: middle;
 }
