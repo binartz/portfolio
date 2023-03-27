@@ -36,23 +36,12 @@ pre{
 }
 
 .column {
-  display: flex;
-  flex-wrap: wrap;
+  flex: 50;
   padding: 0 4px;
 }
 
 .column img {
-  width:300px;
-  height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  vertical-align: middle;
-}
-.row img {
-  width: 300px;
-  height: auto;
-  margin-top: 30px;
-  margin-bottom:30px;
+  margin-top: 8px;
   vertical-align: middle;
 }
 
