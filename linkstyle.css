@@ -22,8 +22,6 @@ img{
     text-align: center;
     padding: 10px;
     color: white;
-
-
 }
 
 .links{
@@ -46,7 +44,7 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: color 1s;
 }
 
