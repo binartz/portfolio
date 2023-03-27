@@ -55,12 +55,11 @@ img {
 }
 
 .logo {
-  display: inline-block;
-  margin: 15px; 
-  float: center;
-  height: 60px;
-  width: auto; 
-  border-radius: 50%;
+  width: auto;
+  height: auto;
+  float:left;
+  padding:22.5px 0px 0px 10px;
+
 }
 
 /*Navigation bar*/
