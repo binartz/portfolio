@@ -42,13 +42,17 @@ pre{
 }
 
 .column img {
-  max-width: 50%;
+  width:300px;
+  height: auto;
   margin-top: 4px;
+  margin-bottom: 30px;
   vertical-align: middle;
 }
 .row img {
-  max-width: 50%;
+  width: 300px;
+  height: auto;
   margin-top: 4px;
+  margin-bottom:30px;
   vertical-align: middle;
 }
 
