@@ -1,5 +1,7 @@
 # bintoubaysmore.github.io
 Website to post the art portfolio and shop of Bintou Baysmore. 
+Images on the website:
+
 ![Oil1](https://user-images.githubusercontent.com/115605702/227825787-e22fc4f3-aa19-466b-9f8d-5d1a4cd1b794.jpg)
 ![Oil2](https://user-images.githubusercontent.com/115605702/227825797-5baa59f4-d150-4d1b-8ce9-e366667be934.jpg)
 ![control](https://user-images.githubusercontent.com/115605702/227830758-6ae0cca2-96a1-4dcc-8a77-1925cc454b71.jpg)![series](https://user-images.githubusercontent.com/115605702/22![SeeOfThought](https://user-images.githubusercontent.com/115605702/227838170-fd00ed86-ad24-4798-8c36-336020d0fdb0.jpg)
