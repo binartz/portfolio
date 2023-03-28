@@ -35,7 +35,7 @@ pre{
 
 .column {
   float: left;
-  flex: 50%;
+  flex: 40%;
   padding: 5px;
 }
 
@@ -45,10 +45,10 @@ pre{
   display: table;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column {
-    width: 100%;
+    width: 60%;
   }
 }
 
