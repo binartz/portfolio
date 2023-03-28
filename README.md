@@ -16,3 +16,6 @@ ithubusercontent.com/115605702/227832793-a6e765aa-56e2-4052-b887-e5fadb2111b2.jp
 ![selfPortrait](https://user-images.githubusercontent.com/115605702/227838152-3255273e-f044-4672-8f9c-e5f6d3ee2dd4.jpg)
 ![wine](https://user-images.githubusercontent.com/115605702/227838157-2166a1bf-807b-4b25-afc0-36362f711d17.jpg)
 ![TearDrop](https://user-images.githubusercontent.com/115605702/227838164-e26a250b-49c2-4506-8dd7-7ddfebeb08d5.JPG)
+![drawingOfSculpture](https://user-images.githubusercontent.com/115605702/228133394-4028d535-93d6-43ba-955e-3ce6ecf5db35.JPG)
+![PaintReality](https://user-images.githubusercontent.com/115605702/228133440-ddbd37f3-18bb-472a-8560-87fdd3d339c6.jpeg)
+![portraits](https://user-images.githubusercontent.com/115605702/228133472-e2500844-5f1e-4829-a144-321e00bae1e9.jpeg)
