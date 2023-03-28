@@ -52,6 +52,7 @@ pre{
   }
 }
 
+/*
 img {
   display:block;
   margin-left: auto;
@@ -61,6 +62,7 @@ img {
   height: 300px;
   object-fit: contain;
 }
+*/
 
 /*Navigation bar*/
 ul {
