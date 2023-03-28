@@ -52,8 +52,7 @@ pre{
   }
 }
 
-/*
-img {
+.profile {
   display:block;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +61,6 @@ img {
   height: 300px;
   object-fit: contain;
 }
-*/
 
 /*Navigation bar*/
 ul {
