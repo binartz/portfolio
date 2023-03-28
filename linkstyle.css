@@ -1,5 +1,7 @@
 body{
     background-image: url("https://github.com/binartz/binartz.github.io/blob/main/362D7B52-54FC-4AD5-889F-14A0F9F68AC3.jpeg?raw=true");
+    background-blend-mode: overlay;
+    background-color: lightblue;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     letter-spacing: 2px;
