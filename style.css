@@ -30,22 +30,23 @@ pre{
 }
 
 .row {
-  display: flex;
+  display: flex; 
+  width: 300px;
+  height: auto;
 }
 
 .column {
   float: left;
   flex: 40%;
   padding: 5px;
+  width: 300px;
+  height: auto;
 }
 
 .row::after {
   content: "";
   clear: both;
   display: table;
-}
-
-img {
   width: 300px;
   height: auto;
 }
