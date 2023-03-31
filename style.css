@@ -31,28 +31,22 @@ pre{
 
 .row {
   display: flex; 
-  width: 300px;
-  height: auto;
 }
 
 .column {
   float: left;
   flex: 40%;
   padding: 5px;
-  width: 300px;
-  height: auto;
 }
 
 .row::after {
   content: "";
   clear: both;
   display: table;
-  width: 300px;
-  height: auto;
 }
 
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
   .column {
     width: 60%;
   }
