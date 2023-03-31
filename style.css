@@ -45,6 +45,11 @@ pre{
   display: table;
 }
 
+img {
+  width: 300px;
+  height: auto;
+}
+
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column {
