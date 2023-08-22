@@ -1,4 +1,4 @@
-# bintoubaysmore.github.io
+# binartz.github.io
 Website to post the art portfolio and shop of Bintou Baysmore. 
 Images on the website:
 
