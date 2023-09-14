@@ -9,6 +9,10 @@ body {
   font-family: "MS PGothic";
 }
 
+img{
+  display: block;
+  margin: 0 auto;
+}
 /*Text*/
 h1{
   text-align: center;
