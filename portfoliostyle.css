@@ -49,6 +49,3 @@ li a:active {
   background-color: black;
 }
 
-li a:hover:not(.active) {
-  background-color: lightblue;
-}
