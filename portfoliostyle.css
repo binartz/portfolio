@@ -26,13 +26,11 @@ body {
   font-family: "MS PGothic";
 }
 
-img {
+.img {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
   height: auto;
   max-width: 150px;
+  padding: 20px;
 }
 
 /*Navigation bar*/
