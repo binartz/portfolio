@@ -1,4 +1,10 @@
+html {
+  background-color: black;
+}
 body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
   background-color: lightblue;
   font-family: "MS PGothic";
 }
@@ -22,45 +28,6 @@ pre{
   font-family: "MS PGothic";
 }
 
-
-/*Images*/
-.image1 {
-  max-width: 48%;
-  margin: 5px top left;
-}
-
-.row {
-  display: flex; 
-}
-
-.column {
-  float: left;
-  flex: 40%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 300px) {
-  .column {
-    width: 60%;
-  }
-}
-
-.profile {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-}
 
 /*Navigation bar*/
 ul {
