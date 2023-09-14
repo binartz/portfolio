@@ -9,13 +9,13 @@ body {
   font-family: "MS PGothic";
 }
 
-img{
-  display: block;
-  margin: 0 auto;
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
   height: auto;
-  width: 50%;
-  border-radius: 50%;
-  padding: 5px;
+  max-width: 150px;
 }
 
 .profile-name {
