@@ -1,1 +1,50 @@
+html {
+  background-color: black;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  background-color: lightblue;
+  font-family: "MS PGothic";
+}
+
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: auto;
+  max-width: 150px;
+}
+
+/*Navigation bar*/
+ul {
+  background-color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: center;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: lightblue;
+}
+
+li a:active {
+  
+  border:2px solid blue;
+}
 
