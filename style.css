@@ -15,7 +15,7 @@ img {
   margin-right: auto;
   margin-top: 5%;
   height: auto;
-  max-width: 150px;
+  max-width: 50%;
 }
 
 .profile-name {
@@ -64,7 +64,7 @@ li a {
   text-decoration: none;
   color: white;
   display: block;
-  padding: 24px 26px;
+  padding: 14px 16px;
   text-align: center;
 }
 
