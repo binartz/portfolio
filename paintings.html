@@ -4,15 +4,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bintou Baysmore</title>
   <link rel="stylesheet" href="portfoliostyle.css" />
+  * Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body>  
-    <!--Links-->
-  <ul>
-  <li><a href="index.html"> About</a></li>
-  <li><a href="characters.html"> Digital Works</a></li>
-  <li><a href="https://forms.gle/MiUJEVy5duKzJ3MG8"> Commissions</a></li>
-</ul>
-  <img src="Images%20for%20portfolio/Oil1.jpg">
+  
+<body>
+  <!--Links-->
+<div class="topnav">
+  <a href="index.html"> About</a></li>
+  <a href="characters.html"> Digital Works</a></li>
+  <a href="https://forms.gle/MiUJEVy5duKzJ3MG8"> Commissions</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="img" style="height:200px;"><img src="Images%20for%20portfolio/Oil1.jpg"></div>
+      <p>Some text..</p>
+
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="img" style="height:200px;"><img src="Images%20for%20portfolio/Oil1.jpg"></div>
+      <p>Some text..</p>
+  </div>
+  </div>
 
 </body>
 </html>
