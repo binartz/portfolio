@@ -26,6 +26,11 @@ body {
   font-family: "MS PGothic";
 }
 
+.leftcolumn {   
+  float: center;
+  width: 75%;
+}
+
 .img {
   display:block;
   height: auto;
