@@ -59,9 +59,3 @@ li a {
 li a:hover {
   background-color: lightblue;
 }
-
-li a:active {
-  color: white;
-  background-color: black;
-}
-
