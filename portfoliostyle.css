@@ -22,20 +22,21 @@ img {
 ul {
   background-color: black;
   list-style-type: none;
+  border: 1px solid #e7e7e7;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
 li {
-  float: center;
+  float: left;
 }
 
 li a {
   text-decoration: none;
   color: white;
   display: block;
-  padding: 8px;
+  padding: 14px 16px;
   text-align: center;
 }
 
@@ -44,7 +45,10 @@ li a:hover {
 }
 
 li a:active {
-  
-  border:2px solid blue;
+  color: white;
+  background-color: black;
 }
 
+li a:hover:not(.active) {
+  background-color: lightblue;
+}
