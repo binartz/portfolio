@@ -1,11 +1,8 @@
 html {
-  background-color: black;
+  background-color: #51382d;
 }
 body {
-  width: 600px;
-  margin: 0 auto;
-  padding: 0 20px 20px 20px;
-  background-color: lightblue;
+  display: block;
   font-family: "MS PGothic";
 }
 
