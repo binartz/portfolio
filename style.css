@@ -3,13 +3,13 @@ body {
   font-family: "MS PGothic";
   background-color: #51382d;
   font-color: white;
+  margin: 25px;
 }
 
 img {
   display:block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
   height: auto;
 }
 
