@@ -19,6 +19,13 @@ body {
   font-family: "MS PGothic";
   font-color: white;
   margin: 25px;
+}
+
+h1 {
+  line-height: 0.9;
+}
+
+h2 {
   line-height: 0.9;
 }
 
@@ -33,7 +40,6 @@ body {
 .container {
   text-align: center;
   padding: 5px 20px;
-  line-height: 0.9;
 }
 
 .row {
