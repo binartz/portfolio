@@ -41,10 +41,14 @@ h5 {
   text-align: center;
   padding: 5px 20px;
   line-height: 0.9;
+  float: left;
 }
 
-.row {
-  display: flex;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 }
 
 img {
