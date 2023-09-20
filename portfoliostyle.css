@@ -33,6 +33,7 @@ body {
 .container {
   text-align: center;
   padding: 5px 20px;
+  line-height: 0.9;
 }
 
 .row::after {
