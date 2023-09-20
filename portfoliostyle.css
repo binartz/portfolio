@@ -14,21 +14,14 @@
   }
 }
 
-html {
-  background-color: black;
-}
-
 body {
-  width: 600px;
-  margin: 0 auto;
-  padding: 0 20px 10px 20px;
-  background-color: lightblue;
+  background-color: #51382d;
   font-family: "MS PGothic";
 }
 
 .leftcolumn {   
   float: center;
-  width: 75%;
+  width: 100%;
 }
 
 img {
