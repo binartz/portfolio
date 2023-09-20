@@ -22,17 +22,16 @@ body {
 }
 
 .leftcolumn {   
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
+  width: 50%;
+  background-color: #E5D3B3;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  margin-bottom: 50px;
   float: center;
-  width: 100%;
 }
 
 .container {
   text-align: center;
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 
 img {
