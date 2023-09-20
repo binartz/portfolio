@@ -1,3 +1,24 @@
+* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  img {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+   ul a {
+    float: none;
+    width: 100%;
+  }
+
+  .fa {
+    float: none;
+    width: 100%;
+  }
+}
+
 body {
   display: block;
   font-family: "MS PGothic";
