@@ -1,11 +1,3 @@
-* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  img {   
-    width: 50%;
-    padding: 0;
-  }
-}
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
    ul a {
@@ -26,12 +18,13 @@ body {
   margin: 25px;
 }
 
-img {
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-}
+.bg {
+  background-image: "Images%20for%20portfolio/WrbsitePic.jpg";
+  height: 50%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 /*Text*/
 
