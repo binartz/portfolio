@@ -10,18 +10,9 @@ img {
   margin-right: auto;
   margin-top: 5%;
   height: auto;
-  max-width: 100%;
 }
 
 /*Text*/
-h1{
-  text-align: center;
-  padding: 0 4px;
-}
-
-h2 {
-  text-align: center;
-}
 
 h3 {
   text-align: center;
@@ -52,7 +43,7 @@ li a {
 }
 
 li a:hover {
-  background-color: lightblue;
+  background-color: #51382d;
 }
 
 /* socials */
