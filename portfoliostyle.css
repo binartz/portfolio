@@ -50,13 +50,13 @@ li {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
   padding: 14px 16px;
   text-align: center;
 }
 
 li a:hover {
-  background-color: lightblue;
+  background-color: #51382d;
 }
 
