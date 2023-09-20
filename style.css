@@ -23,7 +23,6 @@ body {
   display: block;
   font-family: "MS PGothic";
   background-color: #51382d;
-  text-color: white;
   margin: 25px;
 }
 
@@ -39,6 +38,7 @@ img {
 h3 {
   text-align: center;
   padding: 0 4px;
+  color: white;
 }
 
 
