@@ -36,10 +36,8 @@ body {
   line-height: 0.9;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.row {
+  display: flex;
 }
 
 img {
