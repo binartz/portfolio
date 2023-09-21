@@ -22,7 +22,8 @@ body {
 }
 
 .aboutImg {
-  width: 30%:
+  max-width: 80%:
+  height: auto;
 }
 
 
