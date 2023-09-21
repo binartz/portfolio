@@ -24,7 +24,7 @@ body {
 }
 
 .aboutImg {
-  width: 100%:
+  width: 30%:
 }
 
 
@@ -61,13 +61,13 @@ li a:hover {
     cursor: pointer;
 }
 .fa-instagram:hover,.fa-linkedin:hover, .fa-google:hover {
-    color: #008000;
+    color: white;
 }
 .fab {
     color: #000000;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color: #E5D3B3;
     text-align: center;
 }
