@@ -52,6 +52,7 @@ li a {
 
 li a:hover {
   background-color: #51382d;
+  text-color: white;
 }
 
 /* socials */
