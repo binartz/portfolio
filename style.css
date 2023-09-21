@@ -26,13 +26,13 @@ body {
   margin: 25px;
 }
 
-.bg {
-  background-image: "Images%20for%20portfolio/WrbsitePic.jpg";
-  height: 50%; 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: auto;
+}
 
 /*Text*/
 
