@@ -56,34 +56,18 @@ li a:hover {
 }
 
 /* socials */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
 }
-
-.fa:hover {
-    opacity: 0.7;
+.fa-instagram:hover,.fa-linkedin:hover, .fa-google:hover {
+    color: #008000;
 }
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
+.fab {
+    color: #000000;
 }
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
 }
