@@ -19,6 +19,7 @@ body {
   background: url("Images%20for%20portfolio/WrbsitePic.jpg");
   background-size: cover;
   position: relative;
+  width:913px;
 }
 
 .aboutImg {
