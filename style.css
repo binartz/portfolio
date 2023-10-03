@@ -5,21 +5,21 @@ body {
   margin: 25px;
 }
 
-.section {
-  margin-top: 4rem;
-  padding-top: 4rem;
-}
-
-.section:last-of-type {
-  padding-bottom: 4rem;
-}
-
 .bgimage {
   height: 100vh;
   background: url("Images%20for%20portfolio/WrbsitePic.jpg");
   background-size: cover;
   position: relative;
   width:913px;
+}
+
+#about{
+    height:250px;
+    padding-top:5px;
+    padding-left:20%;
+    padding-right:20%;
+    padding-bottom: 120px;
+    
 }
 
 #aboutpage {
