@@ -9,8 +9,13 @@ body {
   background: url("Images%20for%20portfolio/WrbsitePic.jpg");
   background-size: cover;
   position: relative;
-  height: 200px;
-  width:200px;
+  position:fixed;
+  padding-left: 20px;
+  width:100%;
+  top: 0;
+  left: 0;
+  padding-top:30px;
+  padding-right:80px;
 
 }
 
@@ -43,9 +48,12 @@ ul {
   background-color: #E5D3B3;
   list-style-type: none;
   border: 1px solid #e7e7e7;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
+  position:fixed;
+  top:150px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-align:center;
   overflow: hidden;
 }
 
