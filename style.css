@@ -6,11 +6,12 @@ body {
 }
 
 .bgimage {
-  height: 100vh;
   background: url("Images%20for%20portfolio/WrbsitePic.jpg");
   background-size: cover;
   position: relative;
-  width:913px;
+  height: 200px;
+  width:200px;
+
 }
 
 #about{
@@ -31,8 +32,8 @@ body {
     padding-left:10px;
 }
 .aboutImg {
-  height:200px;
-  float:right;
+  height:300px;
+  float:left;
   margin:5px;
 }
 
