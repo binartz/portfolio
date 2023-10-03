@@ -22,9 +22,18 @@ body {
   width:913px;
 }
 
+#aboutpage {
+    background-color: white;
+    border-radius:5%;
+    padding-bottom:60px;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left:10px;
+}
 .aboutImg {
-  max-width: 80%:
-  height: auto;
+  height:200px;
+  float:right;
+  margin:5px;
 }
 
 
