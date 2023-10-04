@@ -6,7 +6,6 @@ body {
 }
 
 .bgimage {
-  background: url("Images%20for%20portfolio/WrbsitePic.jpg");
   background-size: cover;
   position: relative;
   padding-left: 20px;
