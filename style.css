@@ -5,29 +5,19 @@ body {
   margin: 25px;
 }
 
-.bgimage {
-  background-size: cover;
-  position: relative;
-  padding-left: 20px;
-  width:100%;
-  padding-top:30px;
-  padding-right:80px;
-
-}
 
 #about{
     height:250px;
     padding-top:5px;
     padding-left:20%;
     padding-right:20%;
-    padding-bottom: 120px;
-    
+    padding-bottom: 5px;
 }
 
 #aboutpage {
     background-color: white;
     border-radius:5%;
-    padding-bottom:60px;
+    padding-bottom:10px;
     padding-top:10px;
     padding-right:10px;
     padding-left:10px;
