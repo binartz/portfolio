@@ -12,6 +12,7 @@ body {
 
 /* Center website */
 .main {
+  background-color: #51382d;
   max-width: 1000px;
   margin: auto;
 }
