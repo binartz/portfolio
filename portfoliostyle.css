@@ -73,32 +73,3 @@ h1 {
   background-color: #51382d;
   color: white;
 }
-
-/*Navigation bar*/
-ul {
-  background-color: #E5D3B3;
-  list-style-type: none;
-  border: 1px solid #e7e7e7;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  padding: 14px 16px;
-  text-align: center;
-}
-
-li a:hover {
-  background-color: #51382d;
-  text-color: white;
-}
-
