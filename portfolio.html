@@ -6,6 +6,7 @@
    <link rel="icon" type="image/x-icon" href="Images%20for%20portfolio/PortfolioLogo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="portfoliostyle.css">
+  <script src="portfolio.js"></script>
 </head>
   
 <body>
@@ -15,155 +16,136 @@
   <li><a href="https://forms.gle/MiUJEVy5duKzJ3MG8"> Commissions</a></li>
 </ul>
   
-  <section class="section" id="portfolio">
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src=" " style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Self Realization, oil on canvas 2023</h4>
-                            <p class="card-text">Finding myself in my craft has been something I was struggling with.
-        I have gotten to the point where I will continue to create what represents me and what I like 
-        rather than what I see online. Trying to get into the tech industry has almost steered me away from being creative.
-      I don't have to choose between the two because I can definitely do both. I will continue sharing myself through my work.</p>
-                        </div>
-                    </div>
-                </div>
+ <div class="main">
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src=" " style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Self Reconstruction, acrylic on 16x20 canvas Aug 2023</h4>
-                            <p class="card-text">Realizing how I need to be my own person and do what I love to do. 
-        Continue to be creative in all aspects of my life. Learning more about myself each day to remove the toxic traits.</p>
-                        </div>
-                    </div>
-                </div>
+<h2>PORTFOLIO</h2>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src=" "  style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">The First Dinner, oil on canvas May 2023</h4>
-                            <p class="card-text">Recreation of the Last Supper incorporating black feminine people being served by a black man
-        and playing a card game that determines whether a person goes to Heaven or Hell (reincarnated or in the void).
-        Inspiration from the anime series, Death Parade.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/Oil1.jpg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Repaint of L'Odalisque à l'esclave, oil on canvas</h4>
-                            <p class="card-text">Cloth and figure study.</p>
-                        </div>
-                    </div>
-                </div>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('Paintings')"> Paintings</button>
+  <button class="btn" onclick="filterSelection('Projects')"> Projects</button>
+  <button class="btn" onclick="filterSelection('Mixed')"> Drawings and Sculptures</button>
+</div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/Oil2.jpg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Repaint of L'Odalisque à l'esclave, oil on canvas 2023</h4>
-                            <p class="card-text">Removal of the offensive figures and flesh from original painting.</p>
-                        </div>
-                    </div>
-                </div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Paintings">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="" style="width:100%">
+      <h4>Self Realization, oil on canvas 2023</h4>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+    <img src="/w3images/lights.jpg" alt="" style="width:100%">
+      <h4>Self Reconstruction, acrylic on 16x20 canvas Aug 2023</h4>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+    <img src="/w3images/nature.jpg" alt="" style="width:100%">
+      <h4>The First Dinner, oil on canvas May 2023</h4>
+    </div>
+  </div>
+</div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/PaintReality.jpeg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Paint Reality, oil on canvas 2023</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-               <br>
-          
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/portraits.jpeg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Portraits, oil on canvas 2023</h4>
-                            <p class="card-text">Portraits of a young adult male model.</p>
-                        </div>
-                    </div>
-                </div>
+<div class="row">
+  <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/Oil1.jpg" alt="" style="width:100%">
+      <h4>Repaint of L'Odalisque à l'esclave, oil on canvas 2023</h4>
+    </div>
+  </div>
+  <div class="column Paintings">
+    <div class="content">
+    <img src="Images%20for%20portfolio/Oil2.jpg" alt="" style="width:100%">
+      <h4>Repaint of L'Odalisque à l'esclave, oil on canvas 2023</h4>
+    </div>
+  </div>
+     <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/PaintReality.jpeg" alt="" style="width:100%">
+      <h4>Paint Reality, oil on canvas 2023</h4>
+    </div>
+  </div>
+ </div>
+ 
+ <div class="row">
+   <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/portraits.jpeg" alt="" style="width:100%">
+      <h4>Portraits, oil on canvas 2023</h4>
+    </div>
+  </div>
+  
+  <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/recreation.jpg" alt="" style="width:100%">
+      <h4>Repaint of Standing Couple by David Park, acrylic on canvas 2022</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/Still%20life.jpeg" alt="" style="width:100%">
+      <h4>Still life, acrylic on canvas 2022</h4>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column Paintings">
+    <div class="content">
+      <img src="Images%20for%20portfolio/control.jpg" alt="" style="width:100%">
+      <h4>Control, acrylic on canvas 2021</h4>
+    </div>
+  </div>
+ </div>
+  
+  <div class="row">
+   <div class="column Projects">
+    <div class="content">
+      <img src=" " alt="" style="width:100%">
+      <h4>Project 1</h4>
+    </div>
+  </div>
+  <div class="column Projects">
+    <div class="content">
+    <img src=" " alt="" style="width:100%">
+      <h4>Project 2</h4>
+    </div>
+  </div>
+  <div class="column Projects">
+    <div class="content">
+    <img src=" " alt="" style="width:100%">
+      <h4>Project 3</h4>
+    </div>
+  </div>
+  </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/recreation.jpg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Repaint of Standing Couple by David Park, acrylic on canvas 2022</h4>
-                        </div>
-                    </div>
-                </div>
+  <div class="column Mixed">
+    <div class="content">
+      <img src="Images%20for%20portfolio/inkedfigure.jpeg" alt="" style="width:100%">
+      <h4>Self deterioration, ink on paper 2023</h4>
+    </div>
+  </div>
+  <div class="column Mixed">
+    <div class="content">
+    <img src="Images%20for%20portfolio/RecreationDrawing.jpg" alt="" style="width:100%">
+      <h4>Redraw of Garden with Flowers by Van Gogh, ink on paper 2022</h4>
+    </div>
+  </div>
+  <div class="column Mixed">
+    <div class="content">
+    <img src="Images%20for%20portfolio/TearDrop.JPG" alt="" style="width:100%">
+      <h4>Tear Drop</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/Still%20life.jpeg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Still life, acrylic on canvas 2022</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          <br>
-          
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/control.jpg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Control, acrylic on canvas 2021</h4>
-                            <p class="card-text">This painting was created with feelings of guilt, heartbreak, and lack of self control.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          
-    </section>
-   <section class="section" id="portfolio">
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/inkedfigure.jpeg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Self deterioration, ink on paper 2023 </h4>
-                        </div>
-                    </div>
-                </div>
+<!-- END MAIN -->
+</div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/RecreationDrawing.jpg" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Redraw of Garden with Flowers by Van Gogh, ink on paper 2022</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="Images%20for%20portfolio/TearDrop.JPG"  style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Tear Drop</h4>
-                            <p class="card-text">Wooden sculpture with acrylic paint, wire, and plaster.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
 
 </body>
 </html>
