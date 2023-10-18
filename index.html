@@ -8,41 +8,26 @@
   <link rel="stylesheet" href="style.css" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
 </head>
 <body>  
   <!--Image and name-->
 
    <!--Links-->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html" >Bintou Baysmore</a>
+  <div class="navbar">
+  <a href="index.html"> About</a>
+  <a href="https://forms.gle/MiUJEVy5duKzJ3MG8"> Commissions</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="portfolio.html" class="btn" onclick="filterSelection('Paintings')">Paintings</a>
+      <a href="portfolio.html" class="btn" onclick="filterSelection('Projects')">Projects</a>
+      <a href="portfolio.html" class="btn" onclick="filterSelection('Mixed')">Drawings and Sculptures</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      	<li><a href="index.html"> About</a></li>
-        <li class="dropdown">
-          <a href="portfolio.html" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
-          <div class="dropdown-menu" id="myBtnContainer">
-             <li><a href="portfolio.html" class="btn" onclick="filterSelection('Paintings')"> Paintings</a></li>
-             <li><a href="portfolio.html" class="btn" onclick="filterSelection('Projects')"> Projects</a></li>
-             <li><a href="portfolio.html" class="btn" onclick="filterSelection('Mixed')"> Drawings and Sculptures</a></li>
-          </div>
-        </li>
-        <li><a href="https://forms.gle/MiUJEVy5duKzJ3MG8"> Commissions</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </div> 
+</div>
 
   <section id="about">
     <h1 class="text-center">About Me</h1>
