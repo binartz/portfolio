@@ -10,11 +10,38 @@
 <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "MS PGothic"}
-body{
+body {
 	background-color: #51382d;
     }
 
 .w3-row-padding img {margin-bottom: 12px}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+  text-align: center;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 </style>
 <body>
 	
@@ -38,7 +65,7 @@ body{
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-black w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+  <header class="w3-container w3-center" style="padding:100px 16px" id="home">
     <img src="Images%20for%20portfolio/WrbsitePic.jpg" style="display:block;width:90%;margin:auto;">
   </header>
 
@@ -63,41 +90,135 @@ body{
     <h3 class="w3-text-black">Paintings</h3>
 	   <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="Images%20for%20portfolio/TheFirstDinner.jpg"  style="width:100%">
-        <img src="Images%20for%20portfolio/selfPortraitOil.jpg" style="width:100%">
-	<img src="Images%20for%20portfolio/Oil1.jpg"  style="width:100%">
+        <div class="container">
+  		<img src="Images%20for%20portfolio/TheFirstDinner.jpg"  style="width:60%">
+  		<div class="middle">
+    			<div class="text">The First Dinner, Oil Painting 2023</div>
+  		</div>
+	</div>
+        <div class="container">
+  		<img src="Images%20for%20portfolio/selfPortraitOil.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<div class="container">
+  		<img src="Images%20for%20portfolio/Oil1.jpg"  style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
       </div>
 
 	   <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-	<img src="Images%20for%20portfolio/Oil2.jpg" style="width:100%">
-        <img src="Images%20for%20portfolio/PaintReality.jpeg" style="width:100%">
-	<img src="Images%20for%20portfolio/portraits.jpeg"  style="width:100%">
+	<!-- First image-->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/Oil2.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Second image-->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/PaintReality.jpeg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Third image-->
+        <div class="container">
+  		<img src="Images%20for%20portfolio/portraits.jpeg"  style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
       </div>
 		   
 	   <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-	<img src="Images%20for%20portfolio/recreation.jpg" style="width:100%">
-        <img src="Images%20for%20portfolio/Still%20life.jpeg" style="width:100%">
-        <img src="Images%20for%20portfolio/control.jpg" style="width:100%">
+	<!-- First Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/recreation.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Second Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/Still%20life.jpeg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Third Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/control.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
       </div>
       
       <h3 class="w3-text-black">Projects</h3>
       <div class="w3-half">
-	<img src="Images%20for%20portfolio/mural.jpg"  style="width:100%">
-        <video width="320" height="240" controls>
-  <!--<source src="" type="video/mp4">
+	<!-- First Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/mural.jpg"  style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+       <!-- <video width="320" height="240" controls>
+  <source src="" type="video/mp4">
 </video> -->
-        <img src="Images%20for%20portfolio/commissionlogo3.jpg" style="width:100%">
-        <img src="" style="width:100%">
+	<!-- Second Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/commissionlogo3.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- To use for more images
+	<div class="container">
+  		<img src="" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	      -->
       </div>
-      
+		   
       <h3 class="w3-text-black">Drawings and Sculptures</h3>
       <div class="w3-half">
-        <img src="Images%20for%20portfolio/inkedfigure.jpeg"  style="width:100%">
-        <img src="Images%20for%20portfolio/RecreationDrawing.jpg" style="width:100%">
-        <img src="Images%20for%20portfolio/TearDrop.JPG" style="width:100%">
-	<img src="Images%20for%20portfolio/image1.jpeg" style="width:100%">
+	<!-- First Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/inkedfigure.jpeg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Second Image -->
+	<div class="container">
+  		<img src="Images%20for%20portfolio/RecreationDrawing.jpg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Third Image -->
+        <div class="container">
+  		<img src="Images%20for%20portfolio/TearDrop.JPG" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
+	<!-- Fourth Image -->
+        <div class="container">
+  		<img src="Images%20for%20portfolio/image1.jpeg" style="width:60%">
+  		<div class="middle">
+    			<div class="text"> </div>
+  		</div>
+	</div>
       </div>
     <!-- End photo grid -->
     </div>
