@@ -44,43 +44,6 @@ hr {
   color: #e2e2e2;
 }
 
-button {
-  border: none;
-}
-
-.nav-text {
-  font-weight: 600;
-  letter-spacing: .2rem;
-  font-size: 12px;
-  text-transform: lowercase;
-}
-
-.page-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-} 
-
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
-  min-width: 375px;
-  padding: 0 15px 0 15px;
-  min-height: 100vh;
-}
-
-.height {
-  min-height: 100vh;
-  /* margin-bottom: -142px;  */
-}
-
-.nav-content {
-  margin:0 auto;
-  max-width: 960px; 
-  padding: 0 15px 0 15px;
-}
-
 
 .footer-content {
   margin:0 auto;
@@ -92,6 +55,7 @@ button {
   align-items: flex-start;
 
 }
+
 
 .center {
   text-align: center;
@@ -107,11 +71,7 @@ button {
       .xs-hidden {
           display: none;
       }
-      /* .shrink {
-          max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
-      } */
+
   }
   .mobile-max {
       max-width: 500px;
@@ -152,7 +112,42 @@ button {
 
 
 /*Nav bar*/
+button {
+  border: none;
+}
 
+.nav-text {
+  font-weight: 600;
+  letter-spacing: .2rem;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+} 
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-width: 375px;
+  padding: 0 15px 0 15px;
+  min-height: 100vh;
+}
+
+.height {
+  min-height: 100vh;
+  /* margin-bottom: -142px;  */
+}
+
+.nav-content {
+  margin:0 auto;
+  max-width: 960px; 
+  padding: 0 15px 0 15px;
+}
 
 #port-nav-web {
   width: 100%;
@@ -217,6 +212,8 @@ position: sticky;
   color:black;
 
  }
+ 
+
 
  #port-nav-mobile :nth-child(n+3):after {
   content: "\A";
@@ -252,6 +249,8 @@ position: sticky;
   height: 30%;
   float: left;
   margin-right: 2rem;
+  position: sticky;
+  top: 0;
   
 }
 
@@ -269,15 +268,19 @@ position: sticky;
   width: 100%;
 }
 
+#more {
+  display: none;
+}
+
 /*Social media links*/
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
+  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
 .fa:hover {
