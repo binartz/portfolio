@@ -1,0 +1,306 @@
+html, #root, body {
+  height: 100% !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ADD8E6;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  letter-spacing: .2rem;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h2 {
+  letter-spacing: .1rem;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 0;
+}
+
+p {
+  font-weight: 600;
+  letter-spacing: .1rem;
+  font-size: 12px;
+}
+
+hr {
+  color: #e2e2e2;
+}
+
+
+.footer-content {
+  margin:0 auto;
+  max-width: 960px; 
+  display: flex;
+  width: 100%;
+  padding: 30px 15px 30px 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+
+.center {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+/* media queries - hide divs on certain devices */
+
+
+@media (max-width: 767.98px) {
+  /* hides divs on screen size 575.98 and smaller */
+      .xs-hidden {
+          display: none;
+      }
+
+  }
+  .mobile-max {
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  @media (max-width: 959.98px) and (min-width: 768px) {
+      .md-hidden {
+          display: none;
+      }
+      body {
+          min-width: 830px;
+      }
+  
+     
+  }
+  
+  .tab-max {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  @media (min-width: 768px) {
+      /* hides divs on screen size 768 and bigger */
+      .lg-hidden {
+          display: none!important;
+      }
+  
+      body {
+          min-width: 1022px;
+      }
+   
+  }
+
+
+/*Nav bar*/
+button {
+  border: none;
+}
+
+.nav-text {
+  font-weight: 600;
+  letter-spacing: .2rem;
+  font-size: 12px;
+  text-transform: lowercase;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+} 
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  min-width: 375px;
+  padding: 0 15px 0 15px;
+  min-height: 100vh;
+}
+
+.height {
+  min-height: 100vh;
+  /* margin-bottom: -142px;  */
+}
+
+.nav-content {
+  margin:0 auto;
+  max-width: 960px; 
+  padding: 0 15px 0 15px;
+}
+
+#port-nav-web {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
+
+#port-nav-web .menu{
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#port-nav-web .nav-text {
+  line-height: 0;
+}
+
+
+
+#port-nav-web .nav-text:not(:last-child):after {
+  content: " | ";
+  margin-left: 15px;
+  margin-right: 15px;
+  color:black;
+
+ }
+ 
+#port-nav-mobile {
+width: 100%;
+margin-bottom: 3rem;
+text-align: center;
+letter-spacing: normal;
+display: block;
+margin-top: 1.5rem;
+position: sticky;
+}
+
+ #port-nav-mobile .menu {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 5px 0 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+
+ #port-nav-mobile .nav-text:not(:last-child):not(:nth-child(3)):after {
+  content: " | ";
+  margin-left: 10px;
+  margin-right: 10px;
+
+ }
+ 
+ #port-nav-mobile .nav-text:not(:last-child):not(:nth-child(3)):after {
+  content: " | ";
+  margin-left: 10px;
+  margin-right: 10px;
+  color:black;
+
+ }
+ 
+
+
+ #port-nav-mobile :nth-child(n+3):after {
+  content: "\A";
+  white-space: pre;
+
+ }
+
+ /*Logo*/
+ #main-logo{
+  text-align: center;
+ }
+
+ .bintou-logo{
+  min-width: 300px;
+  width: 30%;
+ }
+
+ /* Home page*/
+ #bio-web .container {
+  min-width: 30%;
+  height: 30%;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
+  padding: 0;
+
+}
+
+#bio-web .photo-left {
+  min-width: 30%;
+  height: 30%;
+  float: left;
+  margin-right: 2rem;
+  position: sticky;
+  top: 0;
+  
+}
+
+#bio-web .about-right {
+  float: right;
+}
+
+#bio-pic .img {
+  min-width: 30%;
+  height: 30%;
+}
+
+
+#home {
+  width: 100%;
+}
+
+#more {
+  display: none;
+}
+
+/*Social media links*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
