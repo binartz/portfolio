@@ -46,37 +46,41 @@
             cursor: pointer;
         }
 
-        
     </style>
 </head>
 <body>
+    <div id="root">
+        <header id="main-logo">
+            <img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo">
+        </header>
 
-<div id="root">
-    <div class="page-wrapper">
-        <div class="height">
-            <div class="content">
+        <nav id="port-nav-web" class="xs-hidden">
+            <div class="menu">
+                <a class="nav-text" href="index.html">Home</a>
+                <a class="nav-text" href="projects.html">Projects</a>
+                <a class="nav-text" href="paintings.html">Paintings</a>
+            </div>
+        </nav>
 
-                <!-- Logo -->
-                <div id="main-logo">
-                    <img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo">
-                </div>
+        <nav id="port-nav-mobile" class="lg-hidden md-hidden">
+            <div class="menu">
+                <a class="nav-text" href="index.html">Home</a>
+                <a class="nav-text" href="projects.html">Projects</a>
+                <a class="nav-text" href="paintings.html">Paintings</a>
+            </div>
+        </nav>
 
-                <!-- Nav bar -->
-                <div id="port-nav-web" class="xs-hidden">
-                    <div class="menu">
-                        <a class="nav-text" href="index.html">Home</a>
-                        <a class="nav-text" href="projects.html">Projects</a>
-                        <a class="nav-text" href="paintings.html">Paintings</a>
+        <main class="content">
+            <section class="photo-album">
+                <div class="photo-album--columns">
+                    <div class="photo-album--column">
+                        <img src="Images/PlaneProblem.jpg" alt="Plane Problem" class="react-photo-album--photo">
+                        <img src="Images/PlaneUserFlow.jpg" alt="Plane User Flow" class="react-photo-album--photo">
+                        <img src="Images/PlaneSolutions.jpg" alt="Plane Solutions" class="react-photo-album--photo">
                     </div>
                 </div>
-
-                <div id="port-nav-mobile" class="lg-hidden md-hidden">
-                    <div class="menu">
-                        <a class="nav-text" href="index.html">Home</a>
-                        <a class="nav-text" href="projects.html">Projects</a>
-                        <a class="nav-text" href="paintings.html">Paintings</a>
-                    </div>
-                </div>
+            </section>
+        </main>
 
                 <!-- Paintings -->
                 <h1>Paintings</h1>
@@ -176,5 +180,9 @@
     </div>
 </div>
 
+     <footer class="footer-content">
+            <p>&copy; 2024 Bintou Baysmore. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
