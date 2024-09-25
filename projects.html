@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html>
-<title>Bintou Baysmore Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="home.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bintou Baysmore Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="home.js"></script>
+</head>
 <body>
+    <div id="root">
+        <header id="main-logo">
+            <img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo">
+        </header>
 
+        <nav id="port-nav-web" class="xs-hidden">
+            <div class="menu">
+                <a class="nav-text" href="index.html">Home</a>
+                <a class="nav-text" href="projects.html">Projects</a>
+                <a class="nav-text" href="paintings.html">Paintings</a>
+            </div>
+        </nav>
 
-<div id="root">
-	<div class="page-wrapper">
-		<div class="height">
-			<div class="content">
+        <nav id="port-nav-mobile" class="lg-hidden md-hidden">
+            <div class="menu">
+                <a class="nav-text" href="index.html">Home</a>
+                <a class="nav-text" href="projects.html">Projects</a>
+                <a class="nav-text" href="paintings.html">Paintings</a>
+            </div>
+        </nav>
 
-			<!--Logo-->		
-			<div id="main-logo"><img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo"></div>
-			<!-- Nav bar reg-->
-				<div id="port-nav-web" class="xs-hidden">
-					<div class="menu">
-						<a class="nav-text" href="index.html">Home</a>
-                        <a class="nav-text" href="projects.html">Projects</a>
-						<a class="nav-text" href="paintings.html">Paintings</a>
-					</div></div>
-			<!--Nav bar on mobile devices-->
-				<div id="port-nav-mobile" class="lg-hidden md-hidden">
-					<div class="menu">
-						<a class="nav-text" href="index.html">Home</a>
-                        <a class="nav-text" href="projects.html">Projects</a>
-						<a class="nav-text" href="paintings.html">Paintings</a>
-					</div>
-                </div>
 
 			<!--Projects-->
 				<h1>Projects</h1>
@@ -103,5 +102,9 @@
     </div>
 </div>
 
+<footer class="footer-content">
+            <p>&copy; 2024 Bintou Baysmore. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
