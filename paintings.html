@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bintou Baysmore Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bintou Baysmore Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="home.js"></script>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%; 
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        
+    </style>
 </head>
 <body>
 
@@ -15,10 +56,12 @@
         <div class="height">
             <div class="content">
 
-                <!--Logo-->		
-                <div id="main-logo"><img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo"></div>
+                <!-- Logo -->
+                <div id="main-logo">
+                    <img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo">
+                </div>
 
-                <!-- Nav bar regular -->
+                <!-- Nav bar -->
                 <div id="port-nav-web" class="xs-hidden">
                     <div class="menu">
                         <a class="nav-text" href="index.html">Home</a>
@@ -27,7 +70,6 @@
                     </div>
                 </div>
 
-                <!-- Nav bar on mobile devices -->
                 <div id="port-nav-mobile" class="lg-hidden md-hidden">
                     <div class="menu">
                         <a class="nav-text" href="index.html">Home</a>
@@ -41,11 +83,98 @@
                 <p>Mix of oil and acrylic paintings from 2021 to now</p>
                 <div>
                     <div class="photo-album--columns" style="display: flex; gap: 10px; padding: 10px; justify-content: space-between;">
-                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px); justify-content: space-between;">
-                            <a href="link-to-artwork1.html"> <!-- Replace with actual link -->
-                                <img src="Images/TheFirstDinner.jpg" alt="" class="react-photo-album--photo" style="display: block; width: 100%; height: auto; margin-bottom: 6px;">
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/TheFirstDinner.jpg')">
+                                <img src="Images/TheFirstDinner.jpg" alt="The First Dinner" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
                             </a>
-                            <a href="link-to-artwork2.html"> <!-- Replace with actual link -->
-                                <img src="Images/Oil1.jpg" alt="" class="react-photo-album--photo" style="display: block; width: 100%; height: auto; margin-bottom: 6px;">
+                            <a href="#" onclick="openModal('Images/Oil1.jpg')">
+                                <img src="Images/Oil1.jpg" alt="" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
                             </a>
-                            <a href="link-to-artwork3.html"> <!-- Replace with actual link
+                            <a href="#" onclick="openModal('Images/selfPortraitOil.jpg')">
+                                <img src="Images/selfPortraitOil.jpg" alt="Self Portrait, oil on canvas 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/PaintReality.jpeg')">
+                                <img src="Images/PaintReality.jpeg" alt="Paint Reality, oil on canvas 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/Oil2.jpg')">
+                                <img src="Images/Oil2.jpg" alt="Repaint of L'Odalisque à l'esclave, oil on canvas 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/SelfReconstruction.jpg')">
+                                <img src="Images/SelfReconstruction.jpg" alt="Self Reconstruction, oil on canvas 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/mural.jpg')">
+                                <img src="Images/mural.jpg" alt="Humanity's Dichotomy, mural by Liz Cardova, Monica Carlos, and Bintou Baysmore 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/portraits.jpeg')">
+                                <img src="Images/portraits.jpeg" alt="Portraits, oil on canvas 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/recreation.jpg')">
+                                <img src="Images/recreation.jpg" alt="Repaint of Standing Couple by David Park, acrylic on canvas 2022" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/StillLife.jpeg')">
+                                <img src="Images/StillLife.jpeg" alt="Still life, acrylic on canvas 2022" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/control.jpg')">
+                                <img src="Images/control.jpg" alt="Control, acrylic on canvas 2021" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miscellaneous Section -->
+                <h1>Miscellaneous</h1>
+                <p>Mix of traditional and digital drawings and sculptures</p>
+                <div>
+                    <div class="photo-album--columns" style="display: flex; gap: 10px; padding: 10px; justify-content: space-between;">
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/inkedfigure.jpeg')">
+                                <img src="Images/inkedfigure.jpeg" alt="Self deterioration, ink on paper 2023" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/RecreationDrawing.jpg')">
+                                <img src="Images/RecreationDrawing.jpg" alt="Redraw of Garden with Flowers by Van Gogh, ink on paper 2022" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                            <a href="#" onclick="openModal('Images/Handsculpture.jpg')">
+                                <img src="Images/Handsculpture.jpg" alt="" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                        <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                            <a href="#" onclick="openModal('Images/TearDrop.JPG')">
+                                <img src="Images/TearDrop.JPG" alt="Tear Drop, sculpture made of wire, plaster, wood, and acrylic paint 2021" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="img01">
+                </div>
+
+                <script>
+                    function openModal(imgSrc) {
+                        const modal = document.getElementById("myModal");
+                        const img = document.getElementById("img01");
+                        img.src = imgSrc;
+                        modal.style.display = "block";
+                    }
+
+                    function closeModal() {
+                        const modal = document.getElementById("myModal");
+                        modal.style.display = "none";
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
