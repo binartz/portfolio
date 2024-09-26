@@ -44,14 +44,9 @@ hr {
   color: #e2e2e2;
 }
 
-/* Footer */
 .footer-content {
-  margin: 0 auto;
-  max-width: 960px; 
-  display: flex;
-  width: 100%;
-  padding: 30px 15px;
-  justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Centering */
@@ -335,4 +330,23 @@ button {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.photo-album--columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.photo-album--column {
+    flex: 1 1 300px; /* Adjust as needed */
+    text-align: center;
+}
+
+.project-image, .painting-image, .fitness-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
