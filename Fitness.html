@@ -3,50 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bintou Baysmore Projects</title>
+    <title>Bintou Baysmore Fitness Project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="home.js"></script>
 </head>
 <body>
-    <div id="root">
+    <div id="root" class="centered-container">
         <header id="main-logo">
             <img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo">
         </header>
 
-        <nav id="port-nav-web" class="xs-hidden">
+        <nav class="nav-bar">
             <div class="menu">
                 <a class="nav-text" href="index.html">Home</a>
+                <span class="nav-separator">|</span>
                 <a class="nav-text" href="projects.html">Projects</a>
+                <span class="nav-separator">|</span>
                 <a class="nav-text" href="paintings.html">Paintings</a>
             </div>
         </nav>
 
-        <nav id="port-nav-mobile" class="lg-hidden md-hidden">
-            <div class="menu">
-                <a class="nav-text" href="index.html">Home</a>
-                <a class="nav-text" href="projects.html">Projects</a>
-                <a class="nav-text" href="paintings.html">Paintings</a>
-            </div>
-        </nav>
-			<!-- Actual Portfolio -->
-				<div class="photo-album--columns" style="display: flex; gap:10px; padding: 10px; justify-content: space-between;">
-                    <div class="photo-album--column" 
-                    style="display: grid; justify-content: space-between;">
-                        <img src="Images/FitnessIntro.jpg" alt="" class="react-photo-album--photo" style="display: block; box-sizing: content-box; width:100%; height: auto; margin-bottom: 6px;">
-                        <img src="Images/FitnessDesign.jpg" alt="" class="react-photo-album--photo" style="display: block; box-sizing: content-box; width:100%; height: auto; margin-bottom: 6px;">
-
-                    </div>
-                </div>
-<!--Ending of entire portfolio-->
+        <h1>Fitness Project</h1>
+        <p>Details about the fitness project.</p>
+        
+        <div class="photo-album--columns">
+            <div class="photo-album--column">
+                <img src="Images/FitnessIntro.jpg" alt="Fitness Intro" class="fitness-image">
+                <img src="Images/FitnessDesign.jpg" alt="Fitness Design" class="fitness-image">
             </div>
         </div>
-    </div>
-</div>
- <footer class="footer-content">
+
+        <footer class="footer-content">
             <p>&copy; 2024 Bintou Baysmore. All rights reserved.</p>
         </footer>
-
+    </div>
 </body>
 </html>
-
