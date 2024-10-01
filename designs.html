@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<title>Bintou Baysmore Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="home.js"></script>
+<body>
+ 
+<style>
+	/* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%; 
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+<div id="root">
+	<div class="page-wrapper">
+		<div class="height">
+			<div class="content">
+
+			<!--Logo-->		
+			<div id="main-logo"><img class="bintou-logo" src="Images/logo2.png" alt="Bintou signature logo"></div>
+			<!-- Nav bar reg-->
+				<div id="port-nav-web" class="xs-hidden">
+					<div class="menu">
+						<a class="nav-text" href="index.html">Home</a>
+						<span class="nav-separator">|</span>
+                        			<a class="nav-text" href="projects.html">Projects</a>
+						<span class="nav-separator">|</span>
+						<a class="nav-text" href="paintings.html">Paintings</a>
+					</div></div>
+			<!--Nav bar on mobile devices-->
+				<div id="port-nav-mobile" class="lg-hidden md-hidden">
+					<div class="menu">
+						<a class="nav-text" href="index.html">Home</a>
+						<span class="nav-separator">|</span>
+                        			<a class="nav-text" href="projects.html">Projects</a>
+						<span class="nav-separator">|</span>
+						<a class="nav-text" href="paintings.html">Paintings</a>
+                    </div>
+                </div>
+                
+			<!--Architectural designs-->
+                <h1>Art Studio</h1>
+        <p>3D architectural designs of a new art studio/gallery using Rhino created in Spring 2023</p>
+        <div>
+            <div class="photo-album--columns" style="display: flex; gap: 10px; padding: 10px; justify-content: space-between;">
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/rendered.png')">
+                        <img src="Images/rendered.png" alt="Rendered photo of front of the building" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a> 
+                    <a href="#" onclick="openModal('Images/floorplan.png')">
+                        <img src="Images/floorplan.png" alt="Floorplan of building" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                    
+                </div>
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/front.png')"></a>
+                        <img src="Images/front.png" alt="Unrendered photo of front of the building" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                    <a href="#" onclick="openModal('Images/floorplan_cut.png')"></a>
+                        <img src="Images/floorplan_cut.png" alt="Half of the building" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                    
+                </div>
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/back.png')"></a>
+                        <img src="Images/back.png" alt="Back of the building" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Miscellaneous Section -->
+        <h1>Blender</h1>
+        <p>Blender renders</p>
+        <div>
+            <div class="photo-album--columns" style="display: flex; gap: 10px; padding: 10px; justify-content: space-between;">
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/pool.png')">
+                        <img src="Images/pool.png" alt="Rendered image of a pool, 2022" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                </div>
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/pool2.png')">
+                        <img src="Images/pool2.png" alt="Rendered image of a pool, 2022" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                </div>
+            <!-- This is extra code
+                <div class="photo-album--column" style="display: grid; width: calc(34.436% - 3.7797px);">
+                    <a href="#" onclick="openModal('Images/TearDrop.JPG')">
+                        <img src="Images/TearDrop.JPG" alt="Tear Drop, sculpture made of wire, plaster, wood, and acrylic paint 2021" class="react-photo-album--photo" style="width: 100%; height: auto; margin-bottom: 6px;">
+                    </a>
+                </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+
+        <script>
+            function openModal(imgSrc) {
+                const modal = document.getElementById("myModal");
+                const img = document.getElementById("img01");
+                img.src = imgSrc;
+                modal.style.display = "block";
+            }
+
+            function closeModal() {
+                const modal = document.getElementById("myModal");
+                modal.style.display = "none";
+            }
+        </script>
+    </div>
+ <footer>
+         <div class="footer-content">
+                <p>&copy; 2024 Bintou Baysmore. All Rights Reserved.</p>
+        </div>
+</footer>
+<!--Ending of entire portfolio-->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
