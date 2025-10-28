@@ -280,14 +280,12 @@ button {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
 }
 
 .card-des {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
   margin: 0;
   font-size: 13px;
   color: black;
@@ -350,4 +348,5 @@ button {
     height: auto;
     margin-bottom: 10px;
 }
+
 
