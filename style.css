@@ -349,4 +349,8 @@ button {
     margin-bottom: 10px;
 }
 
+/* Portfolio pdfs */
+embed {
+  width: 100%;
+}
 
