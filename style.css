@@ -184,12 +184,21 @@ button {
 #bio-pic .img {
   min-width: 30%;
   height: 30%;
-  float: left;
 }
 
-#more {
-  display: none;
+#bio-web .photo-left {
+  min-width: 30%;
+  height: 30%;
+  float: left;
+  margin-right: 2rem;
+  position: sticky;
+  top: 0;
 }
+
+#bio-web .about-right {
+  float: right;
+}
+
 
 /* Social Media Links */
 .fa {
@@ -342,6 +351,7 @@ embed {
   width: 100%;
 
 }
+
 
 
 
