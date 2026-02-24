@@ -100,7 +100,7 @@ button {
 .nav-text {
   font-weight: 600;
   letter-spacing: .2rem;
-  font-size: 12px;
+  font-size: 18px;
   text-transform: lowercase;
 }
 
@@ -351,6 +351,7 @@ embed {
   width: 100%;
 
 }
+
 
 
 
