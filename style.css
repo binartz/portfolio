@@ -1,360 +1,265 @@
-/* General Styles */
-html, #root, body {
-  height: 100% !important;
-}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+
+/* -------- General -------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
 
 body {
   margin: 0;
-  font-family: 'Andika';
-  color: black;
+  font-family: 'Andika', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1b1b1b;
+  background-color: #53c3f9;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #53c3f9;
+  line-height: 1.55;
+
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
-
-code {
-  font-family: 'Andika';
-}
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; display: block; }
+code { font-family: 'Andika', monospace; }
 
 h1 {
-  letter-spacing: .2rem;
-  font-size: 18px;
+  letter-spacing: .15rem;
+  font-size: 1.25rem;
   font-weight: 700;
+  margin: 1.25rem 0 .5rem;
 }
-
 h2 {
-  letter-spacing: .1rem;
-  font-size: 13px;
+  letter-spacing: .08rem;
+  font-size: .9rem;
   font-weight: 800;
-  line-height: 0;
 }
-
 p {
-  font-weight: 600;
-  letter-spacing: .1rem;
-  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04rem;
+  font-size: .95rem;
 }
+hr { color: #e2e2e2; }
 
-hr {
-  color: #e2e2e2;
-}
-
-.footer-content {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Centering */
-.center {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-/* Media Queries - Hide Divs on Certain Devices */
-@media (max-width: 767.98px) {
-  .xs-hidden {
-    display: none;
-  }
-}
-
-.mobile-max {
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 959.98px) and (min-width: 768px) {
-  .md-hidden {
-    display: none;
-  }
-  body {
-    min-width: 830px;
-  }
-}
-
-.tab-max {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .lg-hidden {
-    display: none!important;
-  }
-  body {
-    min-width: 1022px;
-  }
-}
-
-/* Navigation */
-button {
-  border: none;
-}
-
-.nav-text {
-  font-weight: 600;
-  letter-spacing: .2rem;
-  font-size: 18px;
-  text-transform: lowercase;
-}
-
-.page-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-} 
-
+/* -------- Layout -------- */
+.page-wrapper { margin: 0 auto; min-height: 100vh; }
 .content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 960px;
-  min-width: 375px;
-  padding: 0 15px;
-  min-height: 100vh;
-}
-
-.height {
-  min-height: 100vh;
-}
-
-.nav-content {
   margin: 0 auto;
-  max-width: 960px; 
-  padding: 0 15px;
+  max-width: 960px;
+  padding: 0 20px 60px;
 }
 
-#port-nav-web {
-  width: 100%;
-  margin-bottom: 3rem;
-  text-align: center;
-  margin-top: 1.5rem;
+/* -------- Logo -------- */
+#main-logo { text-align: center; padding: 2rem 0 0; }
+.bintou-logo {
+  width: clamp(200px, 36vw, 380px);
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
 }
 
-#port-nav-web .menu {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* -------- Navigation -------- */
+#port-nav-web,
 #port-nav-mobile {
   width: 100%;
-  margin-bottom: 3rem;
-  text-align: center;
-  letter-spacing: normal;
-  display: block;
-  margin-top: 1.5rem;
-  position: sticky;
-}
-
-#port-nav-mobile .menu {
-  width: 100%;
-  max-width: 400px;
-  padding: 0 5px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Logo */
-#main-logo {
+  margin: 1.5rem 0 2.5rem;
   text-align: center;
 }
 
-.bintou-logo {
-  min-width: 300px;
-  width: 30%;
+.bz-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  font-weight: 600;
+  letter-spacing: .12rem;
+  font-size: 1.05rem;
+  text-transform: lowercase;
+}
+.bz-nav a {
+  padding: .25rem .75rem;
+  border-radius: 6px;
+  transition: background .2s, color .2s;
+}
+.bz-nav a:hover { background: rgba(0,0,0,0.06); text-decoration: none; }
+.bz-nav a.active { color: #1797b8; }
+.bz-nav .sep {
+  opacity: .35;
+  padding: 0 .15rem;
+  user-select: none;
 }
 
-/* Home Page */
+/* -------- Bio / About -------- */
 #bio-web .container {
-  min-width: 30%;
-  height: 30%;
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   align-items: flex-start;
-  margin-top: 3.5rem;
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
   padding: 0;
 }
-
-#bio-pic .img {
-  min-width: 30%;
-  height: 30%;
+#bio-web .container > div {
+  flex: 1 1 280px;
+  min-width: 240px;
+}
+#bio-pic img,
+#bio-web img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
-#bio-web .photo-left {
-  min-width: 30%;
-  height: 30%;
-  float: left;
-  margin-right: 2rem;
-  position: sticky;
-  top: 0;
-}
-
-#bio-web .about-right {
-  float: right;
-}
-
-
-/* Social Media Links */
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
+/* -------- Social icons -------- */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin: 6px 6px 6px 0;
+  text-decoration: none;
+  transition: opacity .2s, transform .2s;
+}
+.social-icon:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.social-email     { background: #dd4b39; }
+.social-linkedin  { background: #007bb5; }
+.social-instagram { background: #c13584; }
+
+/* -------- Project / Photo cards (responsive grid) -------- */
+.photo-album--columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  padding: 10px 0;
+}
+.photo-album--column {
+  display: flex;
+  width: 100%;
 }
 
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-/* Project Cards */
 .card {
   display: flex;
   flex-direction: column;
-  width: 230px;
-  height: 280px;
-  max-height: 330px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08), -4px -4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  min-height: 290px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08), -2px -2px 12px rgba(0,0,0,0.04);
   overflow: hidden;
-  transition: all 0.3s;
+  transition: transform .25s, box-shadow .25s;
   cursor: pointer;
-  box-sizing: border-box;
-  padding: 10px;
+  padding: 12px;
 }
-
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1), -4px -4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.12);
 }
 
 .card-image-container {
   width: 100%;
-  height: 64%;
+  aspect-ratio: 4 / 3;
   border-radius: 10px;
   margin-bottom: 12px;
   overflow: hidden;
-  background-color: rgb(165, 165, 165);
+  background-color: #efefef;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.image-icon {
-  font-size: 40px;
-}
+.card-image-container img,
+.card-image-container a { width: 100%; height: 100%; display: block; }
+.card-image-container img { object-fit: cover; }
 
 .card-title {
-  margin: 0;
-  font-size: 17px;
-  font-weight: 600;
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
   color: #1797b8;
-  cursor: default;
-  overflow: hidden;
+  /* working line-clamp (1 line) */
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-}
-
-.card-des {
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
+}
+.card-des {
   margin: 0;
-  font-size: 13px;
-  color: black;
-  cursor: default;
+  font-size: 0.85rem;
+  color: #1b1b1b;
+  /* working line-clamp (3 lines) */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
-/* Modal Styles */
+/* -------- Iframe / video tiles -------- */
+.video-tile iframe,
+.photo-album--column iframe {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* -------- Photo album / paintings columns -------- */
+.painting-image,
+.project-image,
+.fitness-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* -------- Footer -------- */
+.footer-content {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* -------- Modal -------- */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
+  z-index: 50;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
   padding-top: 60px;
 }
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
+.modal-content { margin: auto; display: block; width: 80%; max-width: 700px; }
 .close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  position: absolute; top: 15px; right: 30px;
+  color: #fff; font-size: 36px; font-weight: 700; cursor: pointer;
 }
+.close:hover, .close:focus { color: #bbb; }
 
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-.photo-album--columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.photo-album--column {
-    flex: 1 1 300px; /* Adjust as needed */
-    text-align: center;
-}
-
-.project-image, .painting-image, .fitness-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Portfolio pdfs */
-embed {
+/* -------- Embeds (PDF case studies) -------- */
+embed, .pdf-frame {
   width: 100%;
-
+  min-height: 70vh;
+  border: 0;
+  border-radius: 8px;
+  background: #fff;
 }
 
-
-
-
-
-
+/* -------- Mobile tweaks -------- */
+@media (max-width: 600px) {
+  .content { padding: 0 14px 40px; }
+  h1 { font-size: 1.1rem; }
+  .fa { width: 44px; height: 44px; font-size: 18px; padding: 12px; }
+}
 
