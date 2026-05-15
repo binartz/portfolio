@@ -9,6 +9,46 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<style>
+	/* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%; 
+            max-width: 700px;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+</style>
+	
 	<div id= "root'>
 		<div class='page-wrapper'>
 		<div class="content">
@@ -188,21 +228,11 @@
      	</div>
     </div>
  </div>
-<!-- Lightbox overlay 
-<div id="lightbox" class="lightbox" hidden>
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <img id="lightbox-img" alt="\">
-  <div id="lightbox-caption" class="lightbox-caption"></div>
-</div>
--->
 	<!--Footer-->
          <div class="footer-content">
           © <span id="yr"></span> Bintou Baysmore
         </div>
  <script src="nav.js" defer></script>
-	<!--<script src="lightbox.js" defer></script>
-	when you add this, you would have follow this example for every image
-	 <img src="Images/TheFirstDinner.jpg" alt="The First Dinner" loading="lazy" data-lightbox>-->
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
